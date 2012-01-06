@@ -1,6 +1,11 @@
 class OpeningsController < ApplicationController
   def show
-	  @opening = Opening.find(params[:id])
+    begin
+	    @opening = Opening.find(params[:id])
+	  rescue 
+	    ActiveRecord::RecordNotFound
+	    render "welcome/index"
+	  end
   end
   
   def new

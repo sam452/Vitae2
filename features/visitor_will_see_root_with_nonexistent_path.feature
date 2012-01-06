@@ -7,5 +7,8 @@ Feature: Visitor will view root
 Scenario: normal
 	Given an opening does not exist called "Acme"
 	When I go to the path "/openings/acme"
-	Then I should see index.html
+	
+	# Josh note: cucumber can't test for files names rendered--it can only see what a user would see
+  # Then I should see index.html
+	
 	Then I should see "Thank you"
