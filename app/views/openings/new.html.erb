@@ -1,0 +1,44 @@
+<div class="span-11 last" id="background"> 
+
+  <div id="header" class="span-23 last">
+   <nav class="round">
+    
+    </nav>
+  </header>
+  <% if @opening.errors.any? %>
+    <div class="alert-message block-message error">
+      <p><strong>You got an error!</strong></p>
+      <ul>
+        <% @opening.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>    
+    </div>
+  <% end %>
+  
+<%= form_for (@opening)  do |f| %>
+  <div class="field">
+    <%= f.label :company, "Company applied for." %><br />
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :objective, "Objective" %><br />
+    <%= f.text_field :objective %>
+  </div>
+    <div class="field">
+    <%= f.label :name, "Unique name" %><br />
+    <%= f.text_field :name %>
+  </div>
+ <div class="field">
+    <%= f.label :grizzard, "Relevant Grizzard experience" %><br />
+    <%= f.text_area :grizzard %>
+  </div>
+ <div class="field">
+    <%= f.label :skills, "Relevant skills to highlight" %><br />
+    <%= f.text_area :skills %>
+  </div>
+ <div class="actions">
+    <%= f.submit  %>
+  </div>
+<% end %>
+</div>

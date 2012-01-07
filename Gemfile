@@ -8,6 +8,9 @@ gem "friendly_id", "~> 4.0.0"
 
 gem 'sqlite3'
 
+group :production do
+  gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,7 +22,7 @@ end
 
 
 
-gem 'jquery-rails'
+gem 'jquery-rails', "1.0.16"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -43,3 +46,6 @@ group :test do
   gem "pry"
   gem "rspec-rails"
 end
+
+gem "passenger", "~> 3.0.11"
+gem "capistrano", "~> 2.9.0"
