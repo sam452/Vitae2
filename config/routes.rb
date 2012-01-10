@@ -4,6 +4,8 @@ Vitaes::Application.routes.draw do
 
   get "openings/show"
 
+  match '/openings/admin', :to => 'openings#admin'
+  match '/openings/show_report', :to => 'openings#show_report'
   resources :openings
 
 
