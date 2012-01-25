@@ -286,7 +286,7 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
   margin-left:-50px;
 }
 .tight {
-  margin:0 0 0.5em;
+  margin:0 0 0.0em;
 }
 .head {font-weight: bolder;}
 .centre { text-align: center; }
@@ -294,3 +294,4 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 .base {font-size:95%;}
 .leftedge {margin-left: 0px;}
 /*table {padding:15px;}*/
+.str {font-weight:bold}

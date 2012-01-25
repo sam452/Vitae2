@@ -22,6 +22,10 @@ class OpeningsController < ApplicationController
     @opening = Opening.find(:all)
   end
   
+  def edit
+    @opening = Opening.find(params[:id])
+  end
+  
     def create
     @opening = Opening.new(params[:opening])
 
@@ -37,6 +41,17 @@ class OpeningsController < ApplicationController
         format.xml  { render :xml => @opening.errors, :status => :unprocessable_entity }
         format.json { render json: @opening.errors, status: :unprocessable_entity }
       end
+    end
+  end
+  
+    def update
+    @opening = Opening.find(params[:id])
+    if @opening.update_attributes(params[:opening])
+      flash[:success] = "Profile updated."
+      redirect_to @opening
+    else
+      @title = "Edit opening"
+      render 'edit'
     end
   end
 
