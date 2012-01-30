@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120126163222) do
+ActiveRecord::Schema.define(:version => 20120130153934) do
 
   create_table "openings", :force => true do |t|
     t.string   "name"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20120126163222) do
     t.text     "grizzard"
     t.string   "company"
     t.string   "position"
-    t.string   "current"
+    t.text     "current"
   end
 
 end
