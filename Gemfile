@@ -52,3 +52,4 @@ end
 
 gem "passenger", "~> 3.0.11"
 gem "capistrano", "~> 2.9.0"
+gem 'contact_us', '~> 0.4.0.beta'

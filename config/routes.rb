@@ -7,6 +7,7 @@ Vitaes::Application.routes.draw do
   match '/openings/admin', :to => 'openings#admin'
   match '/openings/show_report', :to => 'openings#show_report'
   resources :openings
+  
 
 
   # The priority is based upon order of creation:

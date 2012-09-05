@@ -1,0 +1,121 @@
+// Place all the styles related to the openings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$left-margin: 10px;
+
+p {font-family: NunitoRegular, sans-serif; margin-left:20px;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Nunito', sans-serif; font-weight: bold;}
+
+header {
+border:5px solid #3D0C00;
+margin:10px;
+background-color:#ffe1ae;
+height: 70px;
+}
+
+#name1 {
+  padding-left: 15px;
+
+}
+
+.myname {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size:60px;
+  vertical-align:-1%;
+  position:relative;
+  top : -.2em;
+  float:left;
+}
+
+footer {
+width:750px;
+padding:10px;
+border:5px solid #3D0C00;
+margin:10px;
+clear:both;
+background-color:#ffe1ae;
+font-family: Georgia, serif;
+}
+
+nav  ul {
+       font-family: 'Nunito', sans-serif;
+       font-size: 15px;
+       margin:0px;
+       padding: 0px;
+  }
+  
+nav  ul li {
+       list-style: none;
+       display:inline;
+  }
+  
+nav  ul li a {
+       display:block;
+       float:left;
+       background:#ffe1ae;
+       color:black;
+       padding:2px 15px 0px 15px;
+       text-decoration:none;
+       
+  }
+  
+nav  ul li a:hover {
+       background:#681400;
+       text-transform:uppercase;
+  }
+
+  
+
+
+#add1 {
+  width:200px;
+  font-family: NunitoRegular, sans-serif;
+  font-size:18px;
+  margin-left:40px;
+  padding: 5px;
+  vertical-align: bottom;
+  float:left
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+#sidebar {
+padding:10px;
+border:5px solid #3D0C00;
+margin:40px;
+float:left;
+background-color:#ffe1ae;
+font-family: Nunito;
+
+}
+
+ #sidebar ul  {
+       font-family: 'Nunito', sans-serif;
+       font-weight: normal;
+       font-size: 17px;
+       margin:15px;
+       padding: 0px;
+  }
+  
+  #sidebar li {
+    margin: 12px;
+  }
+  
+
+.base {
+ font-family: NunitoRegular, sans-serif;
+ font-size: 25 px;
+}
+
+
+
