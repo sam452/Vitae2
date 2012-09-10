@@ -1,6 +1,8 @@
 Vitaes::Application.routes.draw do
   root :to => 'welcome#index'
   get "welcome/index"
+  match 'welcome/education', :to => 'welcome#education'
+  match 'welcome/skills', :to => 'welcome#skills'
 
   get "openings/show"
 
