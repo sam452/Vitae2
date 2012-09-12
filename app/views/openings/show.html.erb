@@ -9,6 +9,15 @@
 <div id="experience" class="span-18 last">
 <p class="subhed centre tight">Experience</p>
 <!-- <div id="recent" class="span-18 last"> -->
+
+<% if @opening.current? %>
+<p class="subhed tight">Current</p>
+<%= simple_format(@opening.current, :class => 'base') %>
+<% end %>
+
+
+
+
 <p class="subhed tight">Grizzard, Inc., Atlanta, Ga.</p>
 <%= simple_format(@opening.grizzard, :class => 'base') %>
 <!-- </div> -->

@@ -4,8 +4,11 @@ Vitaes::Application.routes.draw do
 
   get "openings/show"
 
-  resources :openings
+ match '/openings/admin', :to => 'openings#admin'
+ match '/openings/show_report', :to => 'openings#show_report'
+ resources :openings
 
+resources :datafeeds
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
