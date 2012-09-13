@@ -1,14 +1,17 @@
 Vitaes::Application.routes.draw do
-  root :to => 'welcome#index'
+  root :to => 'welcome#skills'
   get "welcome/index"
+  match 'welcome/education', :to => 'welcome#education'
+  match 'welcome/skills', :to => 'welcome#skills'
+  match 'welcome/index', :to => 'welcome#index'
 
   get "openings/show"
 
- match '/openings/admin', :to => 'openings#admin'
- match '/openings/show_report', :to => 'openings#show_report'
- resources :openings
+  match '/openings/admin', :to => 'openings#admin'
+  match '/openings/show_report', :to => 'openings#show_report'
+  resources :openings
+  
 
-resources :datafeeds
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

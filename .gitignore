@@ -14,4 +14,6 @@
 /log/*.log
 /tmp
 .DS_Store
-*.bbprojectd
+*.bbproject
+config/environments/production.rb
+config/environtments/development.rb

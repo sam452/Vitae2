@@ -6,7 +6,9 @@ gem 'rails', '3.1.3'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 gem "friendly_id", "~> 4.0.0"
 
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3'
+end
 
 group :production do
   gem 'pg'
@@ -50,3 +52,4 @@ end
 
 gem "passenger", "~> 3.0.11"
 gem "capistrano", "~> 2.9.0"
+gem 'contact_us', '~> 0.4.0.beta'
