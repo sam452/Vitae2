@@ -1,0 +1,37 @@
+<div class="span-13 last" id="background"> 
+<h1>Listing Openings</h1>
+
+    <nav class="round">
+    
+    </nav>
+  </header>
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @opening.each do |opening| %>
+  <tr>
+    <td><%= link_to 'Show', opening %></td>
+    <td><%= opening.id %></td>
+<<<<<<< HEAD
+	<td><%= opening.slug %></td>
+	<td><%= link_to 'Edit', edit_opening_path(opening) %></td>
+=======
+    <td><%= opening.slug %></td>
+    <td><%= link_to 'Edit', edit_opening_path(opening) %></td>
+>>>>>>> 6a1c78675577b8e91e04a0b57440e610e2b5520e
+    <td><%= link_to 'Destroy', opening, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<<<<<<< HEAD
+<%= link_to 'New Opening', new_opening_path %>
+=======
+<%= link_to 'New Opening', new_opening_path %>
+>>>>>>> 6a1c78675577b8e91e04a0b57440e610e2b5520e

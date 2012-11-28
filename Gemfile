@@ -21,8 +21,9 @@ group :assets do
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
 end
-
-
+gem 'ruby-rc4', :require => "rc4"
+gem 'nokogiri'
+gem 'multi_json'
 
 gem 'jquery-rails', "1.0.16"
 
@@ -38,7 +39,6 @@ gem 'jquery-rails', "1.0.16"
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem 'heroku', "2.18.1"
 group :test do
   # Pretty printed test output
   gem 'cucumber-rails'

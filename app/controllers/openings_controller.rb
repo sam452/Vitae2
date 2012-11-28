@@ -21,6 +21,10 @@ class OpeningsController < ApplicationController
   def admin
     @opening = Opening.find(:all)
   end
+
+  def edit
+    @opening = Opening.find(params[:id])
+  end
   
   def edit
     @opening = Opening.find(params[:id])
@@ -54,5 +58,17 @@ class OpeningsController < ApplicationController
       render 'edit'
     end
   end
+
+    def update
+    @opening = Opening.find(params[:id])
+    if @opening.update_attributes(params[:opening])
+      flash[:success] = "Profile updated."
+      redirect_to @opening
+    else
+      @title = "Edit opening"
+      render 'edit'
+    end
+  end
+
 
 end
