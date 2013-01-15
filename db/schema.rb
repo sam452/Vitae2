@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(:version => 20120130153934) do
   create_table "openings", :force => true do |t|
     t.string   "name"
     t.text     "objective"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "slug"
     t.text     "skills"
     t.text     "grizzard"

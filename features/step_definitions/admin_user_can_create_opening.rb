@@ -1,17 +1,16 @@
 Given /^I go to the new openings page$/ do
-  visit(post_openings_path(post))
+  visit(new_opening_path)
 end
 
-Given /^I fill in "([^"]*)" with "([^"]*)"$/ do |arg1, arg2|
-  #pending # express the regexp above with the code you wish you had
-  fill_in('Name', :with => 'Walmart')
-  fill_in('Company', :with => 'Wal-mart')
-  fill_in('objective', :with => 'Be a nice greeter.')
-  fill_in('grizzard', :with => 'one. two.')
-  fill_in('Skills', :with => 'three. four')
+Given /^I fill in "([^"]*)" with "([^"]*)"$/ do |field, value|
+  fill_in(field, :with => value)
+end
+
+Given /^I (?:click|press) "(.*?)"$/ do |link_text|
+  click_link_or_button link_text
 end
 
 Then /^I should be on the opening show page$/ do
-  visit('/openings#show')
-  #pending # express the regexp above with the code you wish you had
+  opening = Opening.find(params[:id])
+  visit(opening_path(opening))
 end

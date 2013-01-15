@@ -11,4 +11,4 @@ Scenario: normal
 	# Josh note: cucumber can't test for files names rendered--it can only see what a user would see
   # Then I should see index.html
 	
-	Then I should see "Thank you"
+	Then I should see "Sam W. Walton"

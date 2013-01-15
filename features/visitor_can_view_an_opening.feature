@@ -10,4 +10,4 @@ Scenario: normal
 	Then I should see "Sam Walton"
 	Then I should see "Work here"
 	Then I should see "My experience"
-	Then I should see "My skills"
+	Then I should see "Skills"
