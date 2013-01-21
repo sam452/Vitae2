@@ -11,7 +11,3 @@ When /^I go to the path "([^"]*)"$/ do |path|
 	visit(path)
 end
 
-Then /^I should see "([^"]*)"$/ do |text|
-  page.should have_content(text)
-end
-

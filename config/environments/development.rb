@@ -33,8 +33,8 @@ Vitaes::Application.configure do
   :address              => "smtp.gmail.com",
   :port                 => 587,
   :domain               => 'powerhat.org',
-  :user_name            => 'sam@powerhat.org',	
-  :password             => 'lest3r',
+  :user_name            => ENV['GMAIL_USERNAME'],	
+  :password             => ENV['GMAIL_PASSWORD'],
   :authentication       => 'plain',
   :enable_starttls_auto => true  }
 end
