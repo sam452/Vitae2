@@ -5,10 +5,13 @@
 <p class="tight">Joelton, TN 37080, near Nashville, TN</p> 
 <p class="tight">615-495-7783 &bull; sam@samwalton.me</p> 
 </div>
-  <div class="span-4">
+  <div class="span-2">
   <%= link_to image_tag("linkedinss.png",  :border => 0), "http://www.linkedin.com/in/samwalton0", {:class => 'dock-item', :alt => "Linked In"} %>
   </div>
-  <div class="span-1 last">
+  <div class="span-2">
+  	<%= link_to image_tag("pdf.png"), opening_path(@opening, format: "pdf") %>
+  </div>
+  <div class="span-2 last">
   <%= link_to image_tag("github_logoss.gif", :border => 0), "https://github.com/sam452", {:class => 'dock-item', alt: "Github"} %>
   </div>  
 </div> 
