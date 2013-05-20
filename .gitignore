@@ -18,3 +18,4 @@
 config/environments/production.rb
 config/environtments/development.rb
 vendor/cache/*
+config/database.yml
