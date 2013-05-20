@@ -2,7 +2,9 @@
 <%= render  'layouts/background' %>
 
 <p id="notice"><%= notice %></p>
+
 <div id="objective" class="span-18 last">
+<p><%= link_to "Printable Resume (PDF)", opening_path(@opening, format: "pdf") %></p>
 <p class="subhed centre tight">Career Objective</p>
 <p class="base"><%= @opening.objective %></p>
 </div>

@@ -7,6 +7,14 @@ class OpeningsController < ApplicationController
 	    ActiveRecord::RecordNotFound
 	    render "welcome/index"
 	  end
+    respond_to do |format|
+      format.html
+      format.pdf do
+        pdf = MyDocument.new(@opening, view_context)
+        send_data pdf.render, :filename => "#{@title}", :type => "application/pdf", :disposition => "inline"
+
+      end
+    end
   end
   
   def new
@@ -26,11 +34,7 @@ class OpeningsController < ApplicationController
     @opening = Opening.find(params[:id])
   end
   
-  def edit
-    @opening = Opening.find(params[:id])
-  end
-  
-    def create
+  def create
     @opening = Opening.new(params[:opening])
 
     respond_to do |format|
@@ -59,14 +63,16 @@ class OpeningsController < ApplicationController
     end
   end
 
-    def update
+  def index
     @opening = Opening.find(params[:id])
-    if @opening.update_attributes(params[:opening])
-      flash[:success] = "Profile updated."
-      redirect_to @opening
-    else
-      @title = "Edit opening"
-      render 'edit'
+    output = MyDocument.new.to_pdf
+    respond_to do |format|
+      format.pdf { 
+        send_data output, :filename => "#{@opening.id}.pdf", :type => "application/pdf", :disposition => "inline"
+      }
+      format.html {
+        render :text => "<h1>Use .pdf</h1>".html_safe
+      }
     end
   end
 
