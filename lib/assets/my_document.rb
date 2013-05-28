@@ -35,8 +35,6 @@ move_up 12
       base @opening.grizzard
       tight_right "Panaprint, Inc., Macon, Ga."
       base "Composition Department manager from <b>January 1994 to January 1995</b>. Eliminated bottlenecks and help the team to use untapped capabilities in the new systems. The goal was achieved when productivity increased by 25 percent and meeting 95 per cent of the deadlines."
-      tight_right "The Union-Recorder, Milledgeville, Ga."
-      base "News Editor of Page 1A and related news pages for this 8,5000-circulation five-day morning Knight-Ridder newspaper from <b>1993 to 1994</b>. To get to this position, I taught myself to use the new Macintosh and PC software to advance the newspaper to pagination integrating text, artwork and photos. This was an outgrowth of my career as a photojournalist from <b>1986</b>."
       subhed "Skills"
  			#table(my_skills, column_widths: [270, 270], cell_style: {padding: [0, 3, 0, 0], borders: []})
       column_box([0, cursor], columns: 2, width: bounds.width, height: 115) do
