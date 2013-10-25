@@ -9,15 +9,19 @@ gem 'pg'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
+  gem 'less-rails'
   gem 'coffee-rails'
   gem 'uglifier', '>= 1.0.3'
+  gem "therubyracer"
+  gem "twitter-bootstrap-rails"
 end
 gem 'ruby-rc4', :require => "rc4"
 gem 'nokogiri'
 gem 'multi_json'
 
 gem 'jquery-rails'
+
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

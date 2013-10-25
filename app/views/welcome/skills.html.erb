@@ -1,4 +1,11 @@
-<%= render  'layouts/nameplate' %>
+<%= nav_bar brand: "Sam W. Walton", :responsive => true do %>
+  <% menu_group do %>
+    <%= menu_item "What I've done", welcome_index_path %>
+    <%= menu_item "What I'm good at", welcome_skills_path %>
+    <%= menu_item "Where I've learned", welcome_education_path %>
+
+  <% end %>
+<% end %>
 
 
 

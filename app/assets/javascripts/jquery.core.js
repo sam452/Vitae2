@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    $('<div id="ContentDialog"><div id="ContentDialogContent"><img src="i/ajax-loader.gif" /></div><a href="#" id="hlContentDialogClose">Close</a></div>').appendTo('body');
+    $('<div id="ContentDialog"><div id="ContentDialogContent"><img src="assets/ajax-loader.gif" /></div><a href="#" id="hlContentDialogClose">Close</a></div>').appendTo('body');
     $('<div id="ModalOverlay"></div>').appendTo('body');
 
     $(".contentDialog").click(function (e) {
