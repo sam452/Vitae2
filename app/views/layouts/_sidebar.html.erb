@@ -1,20 +1,29 @@
-<div id="myside" class="span-8 last">
-<div id="sidebar">
-<h2>Passionate about ...</h2>
-  <ul>
-	<li>Pivoting the business to exploit the internet</li>
-	<li>Platforms that build people and the business</li>
-	<li>Solving problems</li>
-	<li>Tools and Applications</li>
-  </ul>
+<div id="myside" class="span6">
+  <div id="sidebar">
+    <h2>Passionate about ...</h2>
+    <ul>
+  	<li>Pivoting the business to exploit the internet</li>
+  	<li>Platforms that build people and the business</li>
+  	<li>Solving problems</li>
+  	<li>Tools and Applications</li>
+    </ul>
 
   </div> 
   
 
-  <div id="myButton" class="span-7">
+  <div id="myButton" class="span6">
     
     <%= link_to 'Get more info', contact_us_path, :class => 'large silver button contentDialog'  %>
   </div> 
+
+
+
+  <%= content_tag(:a, "Get more", :href => "#modal", :class => 'btn', :data => {:toggle => 'modal'}) %>
+
+<%= modal_dialog :id => "modal",
+         :header => { :show_close => true, :dismiss => 'modal', :title => 'Modal header' },
+                 :body   => 'This is the body',
+                 :footer => content_tag(:button, 'Save', :class => 'btn') %>
 
 
 </div> 

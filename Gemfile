@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.14'
 
 gem "friendly_id", "~> 4.0.0"
 

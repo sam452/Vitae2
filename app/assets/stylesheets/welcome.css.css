@@ -105,7 +105,7 @@ nav  ul li a:hover {
 padding:10px;
 border:5px solid #3D0C00;
 margin:20px 5px 10px 20px;
-background-color:#fcbfaf;
+background-color:#BEFFBA;
 font-family: Nunito;
 
 }
@@ -140,9 +140,9 @@ font-family: Nunito;
   padding:10px;
   border:5px solid #3D0C00;
   margin:40px;
-  background-color:#ffe1ae;
+  background-color:#FFFFFF;
   font-family: Nunito;
-
+  width: 88%;
 }
 
 #setup ul {
