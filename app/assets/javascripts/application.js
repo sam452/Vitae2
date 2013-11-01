@@ -6,9 +6,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
-//= require_tree .
-
 //= require jquery.easing.1.3.js
 //= require jquery.reveal.js
 //= require jquery.core.js
+//= require bootstrap
+
+
+
+

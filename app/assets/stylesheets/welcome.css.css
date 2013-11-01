@@ -99,13 +99,14 @@ nav  ul li a:hover {
 
 #myside {
   float:right;
+  width: 47%;
 }
 
 #sidebar {
 padding:10px;
 border:5px solid #3D0C00;
 margin:20px 5px 10px 20px;
-background-color:#BEFFBA;
+background-color:#FFE1AE;
 font-family: Nunito;
 
 }
@@ -162,8 +163,11 @@ font-family: Nunito;
 
 #myButton {
   height: 50px;
-  float: right;
-  margin-right:-60px;
+  margin-left: auto;
+  margin-right:auto;
+  float: none;
+  margin-top: 10px;
+  width: 170px;
 }
 
 #myButton a:link {
@@ -282,13 +286,14 @@ font-family: Nunito;
     display: none;
     position: absolute;
     width: 500px;
-    height: 420px;
+    height: 327px;
     top: 10px;
     left: 50%;
-    margin-left: -450px;
+    margin-left: -400px;
     z-index: 100;
     padding: 10px;
-    background: #ce5a5f;
+    background: #1ba210;
+    font-family: 'Nunito'
 }
 
 #ContentDialog h2 
@@ -301,7 +306,7 @@ font-family: Nunito;
 {
     margin: 0 0 10px 0;
     padding: 0;
-    height: 440px;
+    height: 328px;
     overflow-x: hidden;
 }
 

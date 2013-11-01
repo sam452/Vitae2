@@ -1,67 +1,69 @@
 
-<%= render  'layouts/background' %>
+
 
 <p id="notice"><%= notice %></p>
 
-<div id="objective" class="span-18 last">
+<div id="bg">
+	<%= render  'layouts/background' %>
+	<div id="objective" class="span11">
 
-<p class="subhed centre tight">Career Objective</p>
-<p class="base"><%= @opening.objective %></p>
-</div>
-<div id="experience" class="span-18 last">
-<p class="subhed centre tight">Experience</p>
-<!-- <div id="recent" class="span-18 last"> -->
+	<p class="subhed centre tight">Career Objective</p>
+	<p class="base"><%= @opening.objective %></p>
+	</div>
+	<div id="experience" class="span11">
+	<p class="subhed centre tight">Experience</p>
+	<!-- <div id="recent" class="span-18 last"> -->
 
-<% if @opening.current? %>
-<p class="subhed tight">Current</p>
-<%= simple_format(@opening.current, :class => 'base') %>
-<% end %>
-
-
-
-
-<p class="subhed tight">Grizzard, Inc., Atlanta, Ga.</p>
-<%= simple_format(@opening.grizzard, :class => 'base') %>
-<!-- </div> -->
-<p class="subhed tight">Panaprint, Inc., Macon, Ga.</p>
-<p class="base">Composition Department manager from <b>January 1994 to January 1995</b>. Eliminated bottlenecks and help the team to use untapped capabilities in the new systems. The goal was achieved when productivity increased by 25 percent and meeting 95 per cent of the deadlines.</p>
+	<% if @opening.current? %>
+	<p class="subhed tight">Current</p>
+	<%= simple_format(@opening.current, :class => 'base') %>
+	<% end %>
 
 
-<div id="skills" class="span-17 last">
-<p class="head centre tight"><b>Skills</b></p>
-<div class="span-9">
-<ul class="base">
-<li>Cucumber, Rspec and unit test-driven development</li>
-<li>Ruby on Rails, Ruby</li>
-<li>Javascript, CSS, HTML5</li>
-<li>Wordpress theme creation</li>
-<li>Subject-matter expert on Adobe CS print apps</li>
-<li>Filemaker Pro, other SQL experience</li>
-</ul>
-</div>
-
-<div class="span-8 last">
-<ul class="base">
-<li>Written several Applescript applets for automation</li>
-<li>Set up several servers at work, home</li>
-<li>Translating team requirements for quality, throughput</li>
-<li>Extensive management experience</li>
-<li>Comfortable speaking before groups</li>
-</ul>
-</div>
-
-</div>
 
 
-<div id="education" class="span-17 last">
-<p class="head centre tight"><b>Education</b></p>
-<ul class="base">
-<li>Nashville Software School, 2012.</li>
-<li>Pragmatic Studio for Ruby on Rails, January 2009.</li>
-<li>Graduated June 1985 from Henry W. Grady School of Journalism and Mass Communications, University of Georgia, with a major in newspapers and a minor in Religion.</li>
-</ul>
-</div>
- 
+	<p class="subhed tight">Grizzard, Inc., Atlanta, Ga.</p>
+	<%= simple_format(@opening.grizzard, :class => 'base') %>
+	<!-- </div> -->
+	<p class="subhed tight">Panaprint, Inc., Macon, Ga.</p>
+	<p class="base">Composition Department manager from <b>January 1994 to January 1995</b>. Eliminated bottlenecks and help the team to use untapped capabilities in the new systems. The goal was achieved when productivity increased by 25 percent and meeting 95 per cent of the deadlines.</p>
+
+
+	<div id="skills" class="span10">
+	<p class="subhed centre tight"><b>Skills</b></p>
+	<div class="span4">
+	<ul class="base">
+	<li>Cucumber, Rspec and unit test-driven development</li>
+	<li>Ruby on Rails, Ruby</li>
+	<li>Javascript, CSS, HTML5</li>
+	<li>Wordpress theme creation</li>
+	<li>Subject-matter expert on Adobe CS print apps</li>
+	<li>Filemaker Pro, other SQL experience</li>
+	</ul>
+	</div>
+
+	<div class="span5">
+	<ul class="base">
+	<li>Written several Applescript applets for automation</li>
+	<li>Set up several servers at work, home</li>
+	<li>Translating team requirements for quality, throughput</li>
+	<li>Extensive management experience</li>
+	<li>Comfortable speaking before groups</li>
+	</ul>
+	</div>
+
+	</div>
+
+
+	<div id="education" class="span10">
+	<p class="subhed centre tight"><b>Education</b></p>
+	<ul class="base">
+	<li>Nashville Software School, 2012.</li>
+	<li>Pragmatic Studio for Ruby on Rails, January 2009.</li>
+	<li>Graduated June 1985 from Henry W. Grady School of Journalism and Mass Communications, University of Georgia, with a major in newspapers and a minor in Religion.</li>
+	</ul>
+	</div>
+</div> 
 <!-- 
 <div id="bug" class="span-4 last">
 

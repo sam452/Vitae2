@@ -1,1 +1,0 @@
-$(function(){$("a[rel]").overlay({mask:"darkred",effect:"apple",onBeforeLoad:function(){var e=this.getOverlay().find(".contentWrap");e.load(this.getTrigger().attr("href"))}})});

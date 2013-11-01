@@ -9,6 +9,7 @@ gem 'pg'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
+  gem 'jquery-rails'
   gem 'less-rails'
   gem 'coffee-rails'
   gem 'uglifier', '>= 1.0.3'
@@ -19,7 +20,7 @@ gem 'ruby-rc4', :require => "rc4"
 gem 'nokogiri'
 gem 'multi_json'
 
-gem 'jquery-rails'
+
 
 
 
@@ -48,5 +49,5 @@ end
 
 gem "passenger", "~> 3.0.11"
 gem "capistrano", "~> 2.9.0"
-gem 'contact_us', '~> 0.4.0.beta'
+gem 'contact_us', '~> 0.4.0'
 gem 'prawn'
