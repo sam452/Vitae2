@@ -10,7 +10,7 @@ gem 'pg'
 # in production environments by default.
 group :assets do
   gem 'jquery-rails'
-  gem 'less-rails'
+  #gem 'less-rails'
   gem 'coffee-rails'
   gem 'uglifier', '>= 1.0.3'
   gem "therubyracer"
