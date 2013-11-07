@@ -9,13 +9,12 @@ gem 'pg'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'jquery-rails'
-  #gem 'less-rails'
+  gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier', '>= 1.0.3'
-  gem "therubyracer"
-  gem "twitter-bootstrap-rails"
 end
+gem 'jquery-rails'
+gem 'bootstrap-sass', '~> 2.3.2.2'
 gem 'ruby-rc4', :require => "rc4"
 gem 'nokogiri'
 gem 'multi_json'

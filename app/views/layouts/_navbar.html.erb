@@ -1,8 +1,12 @@
-<%= nav_bar brand: "Sam W. Walton  @sam452", fixed: :top do %>
-  <% menu_group pull: :right do %>
-    <%= menu_item "What I've done", welcome_index_path %>
-    <%= menu_item "What I'm good at", welcome_skills_path %>
-    <%= menu_item "Where I've learned", welcome_education_path %>
-
-  <% end %>
-<% end %>
+<%= link_to "Sam W. Walton", root_path, :class => 'brand' %>
+<ul class="nav pull-right">
+  <li>
+    <%= link_to "What I've done", welcome_index_path %>
+    </li>
+    <li>
+    <%= link_to "What I'm good at", welcome_skills_path %>
+    </li>
+  <li>
+    <%= link_to "Where I've learned", welcome_education_path %>
+    </li>
+</ul>

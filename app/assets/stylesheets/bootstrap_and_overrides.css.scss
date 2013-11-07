@@ -1,0 +1,8 @@
+$main-color: #27ae19;
+$accent-color: #3D0C00;
+$feature-background: #ffe1ae;
+
+@import "bootstrap";
+body { padding-top: 60px; background-color: $main-color;}
+@import "bootstrap-responsive";
+

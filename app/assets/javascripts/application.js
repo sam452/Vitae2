@@ -10,6 +10,7 @@
 //= require jquery.reveal.js
 //= require jquery.core.js
 //= require bootstrap
+//= require_tree .
 
 
 
