@@ -3,6 +3,6 @@ $accent-color: #3D0C00;
 $feature-background: #ffe1ae;
 
 @import "bootstrap";
-body { padding-top: 60px; background-color: $main-color;}
+body { padding-top: 60px; background-color: $main-color; font-family: "Nunito"}
 @import "bootstrap-responsive";
 

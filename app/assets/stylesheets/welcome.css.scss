@@ -102,7 +102,7 @@ background: #27ae19;
 padding:10px;
 border:5px solid #3D0C00;
 margin:20px 5px 10px 20px;
-background-color:#fcbfaf;
+background-color:#ffe1ae;
 font-family: Nunito;
 
 }
@@ -249,7 +249,7 @@ font-family: Nunito;
   .button:hover { background-color: #111; color: #fff; }
   .button:active { -webkit-transform: translateY(1px); -moz-transform: translateY(1px); }
   .large.button { font-size: 14px; padding: 8px 19px 9px; }
-  .green.button { background-color: #91bd09; }
+  .green.button { background-color: #209014; }
   .silver.button { background-color: #9daeb3; }
   .silver.button:hover { background-color: #889ca2; }
   .green.button:hover { background-color: #749a02; }
@@ -279,11 +279,11 @@ font-family: Nunito;
 {
     display: none;
     position: absolute;
-    width: 500px;
-    height: 420px;
+    width: 270px;
+    height: 290px;
     top: 10px;
     left: 50%;
-    margin-left: -390px;
+    margin-left: -360px;
     z-index: 100;
     padding: 10px;
     background: #27ae19;
@@ -299,6 +299,10 @@ font-family: Nunito;
 {
     margin: 0 0 10px 0;
     padding: 0;
-    height: 440px;
+    height: 290px;
     overflow-x: hidden;
+}
+
+#contact_us_contact_message_input textarea {
+  height: 110px;
 }

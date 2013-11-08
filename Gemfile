@@ -18,7 +18,7 @@ gem 'bootstrap-sass', '~> 2.3.2.2'
 gem 'ruby-rc4', :require => "rc4"
 gem 'nokogiri'
 gem 'multi_json'
-
+gem 'simple_form'
 
 
 
